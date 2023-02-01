@@ -7,7 +7,6 @@ const userNames = ["Петрик Ольга Іванівна", "Гнатюк П�
 let initials;
 
 // тут ваш код ...
-
 initials = userNames.sort();
 
 
@@ -22,9 +21,9 @@ let reverseMaxValue;
 
 // тут ваш код...
 
+
 console.log(reverseMaxValue); // 9854
 console.log(typeof reverseMaxValue); // 'number'
-
 
 
 // № 3 Задача на знаходження добутку масиву чисел з невідомою глибиною вкладеності:
@@ -33,7 +32,8 @@ const resultsArray = [1, 2, [3, [4]]];
 let productOfArray;
 
 // тут ваш код...
-
-
+productOfArray = resultsArray.reduce((acc, cur) => {
+    return acc + cur;
+});
 
 console.log(productOfArray); // 24
